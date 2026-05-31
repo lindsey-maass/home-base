@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar — Home Base</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="site-title">Home <span>Base</span></a>
+      <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+      <nav>
+        <a href="recipes.html">Recipes</a>
+        <a href="calendar.html" class="active">Calendar</a>
+        <a href="kids.html">Kids</a>
+        <a href="photos.html">Photos</a>
+        <a href="household.html">Household</a>
+        <a href="goals.html">Goals</a>
+        <a href="brett.html">Brett</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header accent-calendar">
+      <h1>📅 Calendar</h1>
+      <p>Upcoming events, summer schedule, and important dates.</p>
+    </div>
+
+    <!-- SUMMER SCHEDULE -->
+    <div class="card" style="margin-bottom:1.5rem;">
+      <h2 style="margin-bottom:1.25rem;">Summer Schedule</h2>
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Day(s)</th>
+            <th>Activity</th>
+            <th>Who</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Mondays &amp; Wednesdays</td><td>Soccer</td><td>Lily</td></tr>
+          <tr><td>Mondays &amp; Wednesdays in June</td><td>Soccer Practice</td><td>Emelia</td></tr>
+          <tr><td>Mondays &amp; Wednesdays in June</td><td>Basketball Skills</td><td>Hank</td></tr>
+          <tr><td>Tuesdays in June</td><td>Basketball League</td><td>Lily</td></tr>
+          <tr><td>Tuesdays</td><td>Softball Practice</td><td>Lily</td></tr>
+          <tr><td>Tuesdays &amp; Thursdays</td><td>PEAK</td><td>Emelia</td></tr>
+          <tr><td>Tuesdays &amp; Thursdays in June</td><td>Comm Ed Tennis</td><td>Hank</td></tr>
+          <tr><td>Tuesdays &amp; Wednesdays</td><td>Basketball</td><td>Brett</td></tr>
+          <tr><td>Thursdays</td><td>Softball Games</td><td>Lily</td></tr>
+          <tr><td>Sundays</td><td>Tennis League</td><td>Hank</td></tr>
+          <tr><td>Wednesdays</td><td>Tennis Open Court</td><td>Hank</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- COMING UP -->
+    <div class="card" style="margin-bottom:1.5rem;">
+      <h2 style="margin-bottom:1.25rem;">Coming Up</h2>
+      <ul class="event-list">
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="month">Jun</span>
+            <span class="day">5</span>
+          </div>
+          <div class="event-info">
+            <h3>Emelia Soccer Tournament Weekend</h3>
+            <p>Weekend tournament</p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="month">Jun</span>
+            <span class="day">7</span>
+          </div>
+          <div class="event-info">
+            <h3>Bryce's Grad Party</h3>
+            <p></p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="month">Jun</span>
+            <span class="day">13</span>
+          </div>
+          <div class="event-info">
+            <h3>Lily Softball Tournament</h3>
+            <p></p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="month">Jun</span>
+            <span class="day">19</span>
+          </div>
+          <div class="event-info">
+            <h3>Emelia Soccer Tournament Weekend</h3>
+            <p>Weekend tournament</p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="month">Jun</span>
+            <span class="day">29</span>
+          </div>
+          <div class="event-info">
+            <h3>Hank — Totus Tuus Camp</h3>
+            <p>June 29 through July 3</p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date">
+            <span class="month">Jul</span>
+            <span class="day">28</span>
+          </div>
+          <div class="event-info">
+            <h3>Leave for the Smokies! 🏔️</h3>
+            <p></p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+    <!-- BIRTHDAYS -->
+    <div class="card" style="margin-top:1.5rem;">
+      <h2 style="margin-bottom:1.25rem;">Birthdays</h2>
+      <ul class="event-list">
+
+        <li class="event-item">
+          <div class="event-date" style="background:var(--sage-light);">
+            <span class="month">Dec</span>
+            <span class="day">19</span>
+          </div>
+          <div class="event-info">
+            <h3>Izzy's Birthday 🎂</h3>
+            <p>Born 2009 &bull; Turning 17 this year</p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date" style="background:var(--dusty-rose-light);">
+            <span class="month">Jan</span>
+            <span class="day">30</span>
+          </div>
+          <div class="event-info">
+            <h3>Emelia's Birthday 🎂</h3>
+            <p>Born 2013 &bull; Turning 14 this year</p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date" style="background:var(--sky-light);">
+            <span class="month">Oct</span>
+            <span class="day">27</span>
+          </div>
+          <div class="event-info">
+            <h3>Hank's Birthday 🎂</h3>
+            <p>Born 2014 &bull; Turning 12 this year</p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date" style="background:var(--golden-light);">
+            <span class="month">May</span>
+            <span class="day">7</span>
+          </div>
+          <div class="event-info">
+            <h3>Lily's Birthday 🎂</h3>
+            <p>Born 2018 &bull; Turning 8 this year</p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date" style="background:var(--terracotta-light);">
+            <span class="month">Aug</span>
+            <span class="day">17</span>
+          </div>
+          <div class="event-info">
+            <h3>Lindsey's Birthday 🎂</h3>
+            <p>Turning 39 this year</p>
+          </div>
+        </li>
+
+        <li class="event-item">
+          <div class="event-date" style="background:#EDE8F5;">
+            <span class="month">May</span>
+            <span class="day">27</span>
+          </div>
+          <div class="event-info">
+            <h3>Anniversary 💍</h3>
+            <p>Lindsey &amp; Brett &bull; Married 2023</p>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Home Base &mdash; just for us.</p>
+  </footer>
+
+</body>
+</html>
