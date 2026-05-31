@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipes — Home Base</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="site-title">Home <span>Base</span></a>
+      <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+      <nav>
+        <a href="recipes.html" class="active">Recipes</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="kids.html">Kids</a>
+        <a href="photos.html">Photos</a>
+        <a href="household.html">Household</a>
+        <a href="goals.html">Goals</a>
+        <a href="brett.html">Brett</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header accent-recipes">
+      <h1>🍳 Recipes</h1>
+      <p>Click any recipe to expand it. Add new ones by editing this file.</p>
+    </div>
+
+    <div class="recipe-grid">
+
+      <!-- ─────────────────────────────────────────
+           TO ADD A NEW RECIPE: Copy one recipe-card
+           block below, paste it, and fill in your
+           own title, tag, ingredients, steps, and
+           notes. That's it.
+      ───────────────────────────────────────────── -->
+
+      <!-- RECIPE 1 -->
+      <div class="recipe-card" onclick="toggleRecipe(this)">
+        <span class="recipe-tag">Dinner</span>
+        <h3>Spaghetti Squash with Italian Sausage</h3>
+        <p style="font-size:0.88rem; color:var(--brown-mid);">High-heat roasted, never mushy. Two servings.</p>
+
+        <div class="recipe-detail">
+          <h4>Ingredients</h4>
+          <ul>
+            <li>1 medium spaghetti squash, halved and seeded</li>
+            <li>½ lb mild Italian sausage, casings removed</li>
+            <li>1 cup marinara sauce</li>
+            <li>1 tbsp olive oil</li>
+            <li>3 garlic cloves, minced</li>
+            <li>¼ tsp red pepper flakes</li>
+            <li>Salt and pepper to taste</li>
+            <li>¼ cup fresh parmesan, grated</li>
+            <li>Fresh basil or parsley to finish</li>
+          </ul>
+
+          <h4>Steps</h4>
+          <ol>
+            <li>Preheat oven to 425°F. Brush cut sides with olive oil, season with salt and pepper. Place cut-side DOWN on a parchment-lined baking sheet.</li>
+            <li>Roast 35–40 minutes until fork-tender.</li>
+            <li>While squash roasts, brown sausage in a skillet over medium-high, breaking into small crumbles. Add garlic and red pepper, stir 60 seconds. Add marinara, reduce heat to low.</li>
+            <li>Flip squash cut-side up. Let cool 5 minutes. Pull strands with a fork, then press with a paper towel to remove moisture. This is the key step — do not skip it.</li>
+            <li>Spoon sausage sauce into each squash half. Top with parmesan and herbs. Serve in the shell.</li>
+          </ol>
+
+          <div class="recipe-notes">
+            💡 If squash still looks wet after pressing, spread strands on a baking sheet and roast 5 more minutes before saucing.
+          </div>
+        </div>
+      </div>
+
+      <!-- RECIPE 2 — placeholder, replace with your own -->
+      <div class="recipe-card" onclick="toggleRecipe(this)">
+        <span class="recipe-tag">Add yours</span>
+        <h3>Your next recipe goes here</h3>
+        <p style="font-size:0.88rem; color:var(--brown-mid);">Open recipes.html and copy this block to add a new one.</p>
+
+        <div class="recipe-detail">
+          <h4>Ingredients</h4>
+          <ul>
+            <li>Ingredient one</li>
+            <li>Ingredient two</li>
+          </ul>
+
+          <h4>Steps</h4>
+          <ol>
+            <li>Step one</li>
+            <li>Step two</li>
+          </ol>
+
+          <div class="recipe-notes">
+            💡 Notes go here.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>Home Base &mdash; just for us.</p>
+  </footer>
+
+  <script>
+    function toggleRecipe(card) {
+      const detail = card.querySelector('.recipe-detail');
+      detail.classList.toggle('open');
+    }
+  </script>
+
+</body>
+</html>

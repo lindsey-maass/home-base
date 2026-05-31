@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photos & Memories — Home Base</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="site-title">Home <span>Base</span></a>
+      <button class="hamburger" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+      <nav>
+        <a href="recipes.html">Recipes</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="kids.html">Kids</a>
+        <a href="photos.html" class="active">Photos</a>
+        <a href="household.html">Household</a>
+        <a href="goals.html">Goals</a>
+        <a href="brett.html">Brett</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-header accent-photos">
+      <h1>📷 Photos & Memories</h1>
+      <p>Moments worth keeping. Add photos by dropping image files into the site folder and linking them below.</p>
+    </div>
+
+    <!-- ─────────────────────────────────────────────────────
+         HOW TO ADD A PHOTO:
+         1. Put your image file in the same folder as this page
+            (e.g. "summer-2025.jpg")
+         2. Copy one photo-entry block below
+         3. Replace the emoji placeholder with an <img> tag:
+            <img src="summer-2025.jpg" alt="Summer 2025"
+                 style="width:100%; height:180px; object-fit:cover;" />
+         4. Update the title and caption text
+    ──────────────────────────────────────────────────────── -->
+
+    <div class="photo-grid">
+
+      <div class="photo-entry">
+        <div class="photo-placeholder">🏠</div>
+        <div class="photo-caption">
+          <strong>Our House</strong>
+          <p>Add a photo of the house here.</p>
+        </div>
+      </div>
+
+      <div class="photo-entry">
+        <div class="photo-placeholder">⭐</div>
+        <div class="photo-caption">
+          <strong>The Kids</strong>
+          <p>A favorite photo of all four.</p>
+        </div>
+      </div>
+
+      <div class="photo-entry">
+        <div class="photo-placeholder">🏀</div>
+        <div class="photo-caption">
+          <strong>Game Night</strong>
+          <p>Add a memory from a game or event.</p>
+        </div>
+      </div>
+
+      <div class="photo-entry">
+        <div class="photo-placeholder">✨</div>
+        <div class="photo-caption">
+          <strong>Something Fun</strong>
+          <p>A trip, a moment, something worth remembering.</p>
+        </div>
+      </div>
+
+      <div class="photo-entry">
+        <div class="photo-placeholder">🌿</div>
+        <div class="photo-caption">
+          <strong>Another Memory</strong>
+          <p>Keep adding as you go.</p>
+        </div>
+      </div>
+
+      <div class="photo-entry">
+        <div class="photo-placeholder">💛</div>
+        <div class="photo-caption">
+          <strong>One More</strong>
+          <p>The grid grows as you add more.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- JOURNAL / NOTES section -->
+    <div style="margin-top:2.5rem;">
+      <h2 style="font-size:1.4rem; margin-bottom:1.25rem; padding-bottom:0.75rem; border-bottom:1px solid var(--border);">Notes & Little Things</h2>
+
+      <!-- ─────────────────────────────────────
+           Copy a .card block to add a new journal
+           entry or memory note.
+      ─────────────────────────────────────────── -->
+
+      <div class="card">
+        <h3 style="margin-bottom:0.5rem;">First entry</h3>
+        <p style="font-size:0.88rem; color:var(--brown-mid); margin-bottom:0.75rem;">Add a date here</p>
+        <p>Write something here. A funny thing a kid said, something you want to remember, a note about a good day. Anything goes.</p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>Home Base &mdash; just for us.</p>
+  </footer>
+
+</body>
+</html>
